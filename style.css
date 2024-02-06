@@ -1,0 +1,165 @@
+    #regiration_form fieldset:not(:first-of-type) {
+        display: none;
+    }
+    
+    body {
+        background: #3AA0F3;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh !important;
+    }
+    
+    .main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 55%;
+        background-color: #fff;
+        transform: translate(-50%, -50%);
+        padding: 25px 0px 0px 0px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    
+    .form-control:focus {
+        border-color: none !important;
+        box-shadow: none !important;
+    }
+    
+    label {
+        margin-bottom: .2rem !important;
+        font-weight: 550;
+        font-size: 18px;
+        color: #CE7E00;
+    }
+    /* First One  */
+    
+    .home-intro {
+        padding: 0px 15px;
+        text-align: center;
+    }
+    
+    .home-intro h3 {
+        color: #000;
+        font-size: 1.8em;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        padding: .4em 0em;
+    }
+    
+    .home-intro p {
+        font-size: 1.4em;
+        text-transform: capitalize;
+        color: #000;
+    }
+    
+    .home-intro span {
+        color: #000;
+        font-size: 0.9em;
+    }
+    /* Second One  */
+    
+    .home-intro-two {
+        padding: 0px 15px;
+        text-align: center;
+    }
+    
+    .home-intro-two h4 {
+        color: #000;
+        margin: 10px 0;
+        text-transform: capitalize;
+    }
+    
+    .home-intro-two p {
+        font-size: 1em;
+        color: #000;
+    }
+    
+    .home-intro-two input {
+        width: 5%;
+        height: 1.5em;
+    }
+    
+    .home-intro-two input[type="radio"] {
+        opacity: 0;
+        position: fixed;
+        width: 0;
+    }
+    
+    .home-intro-two label {
+        display: inline-block;
+        background-color: transparent;
+        width: 20%;
+        padding: 6px 0;
+        font-family: sans-serif, Arial;
+        font-size: 16px;
+        border: 2px solid #1776eb;
+        border-radius: 4px;
+    }
+    
+    .home-intro-two label:hover {
+        background-color: #1776eb;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .home-intro-two input[type="radio"]:focus+label {
+        border: 2px dashed #444;
+    }
+    
+    .home-intro-two input[type="radio"]:checked+label {
+        background-color: #bfb;
+        border-color: #4c4;
+    }
+    
+    .home-intro-two label {
+        color: #1776eb;
+        font-size: 1.4em;
+    }
+    /* Button  */
+    
+    #first_btn {
+        background-color: #9DC83B;
+        border: #9DC83B;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        padding: 10px 25px;
+        margin-top: 20px;
+        font-size: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 100%;
+    }
+    
+    #second_btn {
+        background-color: #9DC83B;
+        border: #9DC83B;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        padding: 10px 25px;
+        margin-top: 20px;
+        font-size: 20px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 100%;
+        text-align: right;
+    }
+    
+    @media screen and (max-width: 550px) {
+        .main {
+            width: 90% !important;
+        }
+        .home-intro {
+            padding: 10px 20px;
+        }
+        .home-intro-two {
+            padding: 10px 20px;
+        }
+        .form-img {
+            margin-bottom: 20px;
+        }
+    }
